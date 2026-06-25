@@ -158,7 +158,7 @@ export default function RecipesView() {
           transition: "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
           backgroundColor: "rgba(20,16,10,0.88)",
           backdropFilter: "blur(14px)",
-          borderBottom: "1px solid rgba(255,255,255,0.1)",
+          borderBottom: "1px solid rgba(255,255,255,0.2)",
         }}>
           <div
             className="max-w-7xl mx-auto px-6 lg:px-12"
@@ -174,7 +174,7 @@ export default function RecipesView() {
               fontSize: "8px",
               letterSpacing: "0.18em",
               textTransform: "uppercase",
-              color: "rgba(255,255,255,0.85)",
+              color: "#FFFFFF",
               flexShrink: 0,
               paddingRight: "4px",
               fontWeight: 700,
@@ -285,7 +285,8 @@ export default function RecipesView() {
               <span style={{
                 fontFamily: "'DM Sans', sans-serif",
                 fontSize: "11px",
-                color: "rgba(255,255,255,0.3)",
+                color: "#FFFFFF",
+                fontWeight: 600,
                 marginLeft: "4px",
                 whiteSpace: "nowrap",
               }}>
@@ -300,7 +301,8 @@ export default function RecipesView() {
               style={{
                 fontFamily: "'DM Sans', sans-serif",
                 fontSize: "11px",
-                color: "rgba(255,255,255,0.35)",
+                color: "rgba(255,255,255,0.9)",
+                fontWeight: 500,
                 background: "none",
                 border: "none",
                 cursor: "pointer",
