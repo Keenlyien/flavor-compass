@@ -91,14 +91,6 @@ export default function RecipesView() {
     }
   }, [query, cuisine, diet, sort, page])
 
-  useEffect(() => {
-    const onVisible = () => {
-      if (document.visibilityState === "visible") fetchRecipes()
-    }
-    document.addEventListener("visibilitychange", onVisible)
-    return () => document.removeEventListener("visibilitychange", onVisible)
-  }, [fetchRecipes])
-
   useEffect(() => { fetchRecipes() }, [fetchRecipes])
 
   const handleSearch = () => {
@@ -182,9 +174,10 @@ export default function RecipesView() {
               fontSize: "8px",
               letterSpacing: "0.18em",
               textTransform: "uppercase",
-              color: "rgba(255,255,255,0.3)",
+              color: "rgba(255,255,255,0.85)",
               flexShrink: 0,
               paddingRight: "4px",
+              fontWeight: 700,
             }}>
               Active
             </span>
