@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 
 /* ── Inline SVG icons ── */
 const GitHubIcon = () => (
@@ -74,17 +75,24 @@ export default function Footer() {
 
           {/* About */}
           <div>
-            <span style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "22px",
-              fontWeight: 300,
-              color: "rgba(240,232,220,0.95)",
-              letterSpacing: "0.08em",
-              display: "block",
-              marginBottom: "16px",
-            }}>
-              Digital Chef
-            </span>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
+              <Image
+                src="/flavor_compass.png"
+                alt="Flavor Compass"
+                width={32}
+                height={32}
+                style={{ objectFit: "contain", filter: "brightness(0) invert(0.85) sepia(0.3) saturate(0.5)" }}
+              />
+              <span style={{
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
+                fontSize: "22px",
+                fontWeight: 300,
+                color: "rgba(240,232,220,0.95)",
+                letterSpacing: "0.08em",
+              }}>
+                Flavor Compass
+              </span>
+            </div>
             <p style={{
               fontFamily: "'DM Sans', sans-serif",
               fontSize: "13px",
@@ -93,8 +101,9 @@ export default function Footer() {
               maxWidth: "280px",
               margin: 0,
             }}>
-              A personal project built out of curiosity. Not affiliated with any
-              company and does not pursue monetization.
+              A guide for home cooks looking to explore new recipes and discover
+              new directions in cooking. A personal project — not affiliated with
+              any company and does not pursue monetization.
             </p>
           </div>
 
@@ -218,7 +227,7 @@ export default function Footer() {
             textTransform: "uppercase",
             color: "rgba(180,155,120,0.35)",
           }}>
-            © {new Date().getFullYear()} Digital Chef · Personal project
+            © {new Date().getFullYear()} Flavor Compass · Personal project
           </span>
           <span style={{
             fontFamily: "'Courier Prime', monospace",

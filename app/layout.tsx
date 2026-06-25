@@ -4,8 +4,8 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider"
 import Footer from "@/components/layout/Footer"
 
 export const metadata: Metadata = {
-  title: "Digital Chef — Cook the World",
-  description: "International recipe discovery with step-by-step cooking walkthroughs.",
+  title: "Flavor Compass — Your Global Cooking Guide",
+  description: "Discover recipes from around the world. Flavor Compass guides home cooks through new cuisines, techniques, and flavors — one recipe at a time.",
 }
 
 export default function RootLayout({

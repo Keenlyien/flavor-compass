@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -31,15 +32,28 @@ export default function Navbar() {
           <Link
             href="/"
             style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "22px",
-              fontWeight: 300,
-              color: "var(--text-primary)",
-              letterSpacing: "0.08em",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "10px",
               textDecoration: "none",
             }}
           >
-            Digital Chef
+            <Image
+              src="/flavor_compass.png"
+              alt="Flavor Compass"
+              width={36}
+              height={36}
+              style={{ objectFit: "contain" }}
+            />
+            <span style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "20px",
+              fontWeight: 300,
+              color: "var(--text-primary)",
+              letterSpacing: "0.06em",
+            }}>
+              Flavor Compass
+            </span>
           </Link>
 
           {/* Nav links — center */}
