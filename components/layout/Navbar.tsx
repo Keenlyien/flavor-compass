@@ -41,16 +41,21 @@ export default function Navbar() {
             <Image
               src="/flavor_compass.png"
               alt="Flavor Compass"
-              width={36}
-              height={36}
-              style={{ objectFit: "contain" }}
+              width={40}
+              height={40}
+              style={{
+                objectFit: "cover",
+                borderRadius: "50%",
+                border: "1.5px solid var(--border)",
+                boxShadow: "0 1px 6px rgba(50,35,15,0.12)",
+              }}
             />
             <span style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "20px",
-              fontWeight: 300,
+              fontFamily: "'DM Sans', system-ui, sans-serif",
+              fontSize: "14px",
+              fontWeight: 500,
               color: "var(--text-primary)",
-              letterSpacing: "0.06em",
+              letterSpacing: "0.02em",
             }}>
               Flavor Compass
             </span>
