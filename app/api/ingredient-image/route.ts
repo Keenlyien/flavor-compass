@@ -21,7 +21,8 @@ const REJECT_PATTERNS: RegExp[] = [
 /* ═══════════════════════════════════════════════════════════
    NORMALIZATIONS — built from actual 144k ingredient scan
 ═══════════════════════════════════════════════════════════ */
-const NORMALIZATIONS: [RegExp, string][] = [
+type Replacer = string | ((match: string, ...args: string[]) => string)
+const NORMALIZATIONS: [RegExp, Replacer][] = [
 
   // ── Reject combos ──
   [/\bkosher\s+salt\s+and\s+freshly\s+ground\s+black\s+pepper\b/gi, "REJECT"],
@@ -343,7 +344,8 @@ function cleanIngredientName(raw: string): string {
 
   // 3. Normalizations
   for (const [pattern, replacement] of NORMALIZATIONS) {
-    s = s.replace(pattern, replacement as string)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    s = s.replace(pattern, replacement as any)
   }
   if (s.includes("REJECT") || !s.trim()) return ""
 
