@@ -82,10 +82,12 @@ export default function Footer() {
                 width={44}
                 height={44}
                 style={{
-                  objectFit: "cover",
+                  objectFit: "contain",
                   borderRadius: "50%",
+                  backgroundColor: "#F0EBE1",
                   border: "1.5px solid rgba(255,255,255,0.15)",
                   boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
+                  padding: "4px",
                 }}
               />
               <span style={{
