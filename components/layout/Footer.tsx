@@ -77,19 +77,12 @@ export default function Footer() {
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
               <Image
-                src="/flavor_compass.png"
-                alt="Flavor Compass"
-                width={44}
-                height={44}
-                style={{
-                  objectFit: "contain",
-                  borderRadius: "50%",
-                  backgroundColor: "#F0EBE1",
-                  border: "1.5px solid rgba(255,255,255,0.15)",
-                  boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
-                  padding: "4px",
-                }}
-              />
+              src="/flavor_compass.png"
+              alt="Flavor Compass"
+              width={48}
+              height={48}
+              style={{ objectFit: "contain" }}
+            />
               <span style={{
                 fontFamily: "'DM Sans', system-ui, sans-serif",
                 fontSize: "15px",
