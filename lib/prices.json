@@ -1,0 +1,322 @@
+{
+  "US": {
+    "currency": "USD", "symbol": "$",
+    "chicken_breast_kg": 8.50, "eggs_dozen": 3.50, "rice_kg": 2.20,
+    "onion_kg": 1.80, "garlic_kg": 8.00, "tomato_kg": 3.50,
+    "potato_kg": 2.00, "flour_kg": 1.50, "butter_kg": 9.00,
+    "olive_oil_liter": 10.00, "milk_liter": 1.20, "cheese_kg": 12.00,
+    "beef_kg": 14.00, "pork_kg": 7.50, "pasta_kg": 2.50,
+    "bread_loaf": 3.50, "cream_liter": 4.00, "sugar_kg": 1.20,
+    "salt_kg": 0.80, "pepper_kg": 28.00
+  },
+  "CA": {
+    "currency": "CAD", "symbol": "CA$",
+    "chicken_breast_kg": 11.00, "eggs_dozen": 4.50, "rice_kg": 2.80,
+    "onion_kg": 2.20, "garlic_kg": 10.00, "tomato_kg": 4.50,
+    "potato_kg": 2.50, "flour_kg": 2.00, "butter_kg": 11.00,
+    "olive_oil_liter": 13.00, "milk_liter": 1.80, "cheese_kg": 15.00,
+    "beef_kg": 18.00, "pork_kg": 9.00, "pasta_kg": 3.00,
+    "bread_loaf": 4.00, "cream_liter": 5.00, "sugar_kg": 1.50,
+    "salt_kg": 1.00, "pepper_kg": 32.00
+  },
+  "MX": {
+    "currency": "MXN", "symbol": "MX$",
+    "chicken_breast_kg": 95.00, "eggs_dozen": 38.00, "rice_kg": 22.00,
+    "onion_kg": 18.00, "garlic_kg": 60.00, "tomato_kg": 25.00,
+    "potato_kg": 20.00, "flour_kg": 15.00, "butter_kg": 90.00,
+    "olive_oil_liter": 130.00, "milk_liter": 22.00, "cheese_kg": 110.00,
+    "beef_kg": 140.00, "pork_kg": 80.00, "pasta_kg": 28.00,
+    "bread_loaf": 35.00, "cream_liter": 45.00, "sugar_kg": 18.00,
+    "salt_kg": 8.00, "pepper_kg": 200.00
+  },
+  "GB": {
+    "currency": "GBP", "symbol": "£",
+    "chicken_breast_kg": 7.00, "eggs_dozen": 3.20, "rice_kg": 1.80,
+    "onion_kg": 1.20, "garlic_kg": 7.00, "tomato_kg": 2.80,
+    "potato_kg": 1.50, "flour_kg": 1.20, "butter_kg": 7.50,
+    "olive_oil_liter": 8.00, "milk_liter": 1.10, "cheese_kg": 9.00,
+    "beef_kg": 12.00, "pork_kg": 6.50, "pasta_kg": 2.00,
+    "bread_loaf": 2.50, "cream_liter": 3.50, "sugar_kg": 1.00,
+    "salt_kg": 0.70, "pepper_kg": 22.00
+  },
+  "DE": {
+    "currency": "EUR", "symbol": "€",
+    "chicken_breast_kg": 7.50, "eggs_dozen": 3.00, "rice_kg": 1.80,
+    "onion_kg": 1.20, "garlic_kg": 7.00, "tomato_kg": 2.50,
+    "potato_kg": 1.50, "flour_kg": 1.00, "butter_kg": 7.00,
+    "olive_oil_liter": 9.00, "milk_liter": 1.00, "cheese_kg": 10.00,
+    "beef_kg": 13.00, "pork_kg": 7.00, "pasta_kg": 1.80,
+    "bread_loaf": 2.80, "cream_liter": 3.00, "sugar_kg": 1.00,
+    "salt_kg": 0.60, "pepper_kg": 24.00
+  },
+  "FR": {
+    "currency": "EUR", "symbol": "€",
+    "chicken_breast_kg": 8.00, "eggs_dozen": 3.50, "rice_kg": 2.00,
+    "onion_kg": 1.50, "garlic_kg": 8.00, "tomato_kg": 3.00,
+    "potato_kg": 1.80, "flour_kg": 1.20, "butter_kg": 8.00,
+    "olive_oil_liter": 10.00, "milk_liter": 1.10, "cheese_kg": 14.00,
+    "beef_kg": 15.00, "pork_kg": 8.00, "pasta_kg": 2.00,
+    "bread_loaf": 2.00, "cream_liter": 3.50, "sugar_kg": 1.00,
+    "salt_kg": 0.70, "pepper_kg": 25.00
+  },
+  "IT": {
+    "currency": "EUR", "symbol": "€",
+    "chicken_breast_kg": 7.00, "eggs_dozen": 3.20, "rice_kg": 1.80,
+    "onion_kg": 1.20, "garlic_kg": 6.00, "tomato_kg": 2.50,
+    "potato_kg": 1.50, "flour_kg": 1.00, "butter_kg": 7.00,
+    "olive_oil_liter": 7.00, "milk_liter": 1.00, "cheese_kg": 12.00,
+    "beef_kg": 13.00, "pork_kg": 7.00, "pasta_kg": 1.50,
+    "bread_loaf": 2.50, "cream_liter": 3.00, "sugar_kg": 1.00,
+    "salt_kg": 0.60, "pepper_kg": 22.00
+  },
+  "ES": {
+    "currency": "EUR", "symbol": "€",
+    "chicken_breast_kg": 6.50, "eggs_dozen": 2.80, "rice_kg": 1.50,
+    "onion_kg": 1.00, "garlic_kg": 5.00, "tomato_kg": 2.20,
+    "potato_kg": 1.20, "flour_kg": 0.90, "butter_kg": 6.50,
+    "olive_oil_liter": 6.00, "milk_liter": 0.90, "cheese_kg": 10.00,
+    "beef_kg": 11.00, "pork_kg": 6.00, "pasta_kg": 1.50,
+    "bread_loaf": 1.80, "cream_liter": 2.80, "sugar_kg": 0.90,
+    "salt_kg": 0.50, "pepper_kg": 20.00
+  },
+  "NL": {
+    "currency": "EUR", "symbol": "€",
+    "chicken_breast_kg": 7.50, "eggs_dozen": 3.00, "rice_kg": 2.00,
+    "onion_kg": 1.20, "garlic_kg": 7.00, "tomato_kg": 2.80,
+    "potato_kg": 1.50, "flour_kg": 1.00, "butter_kg": 7.50,
+    "olive_oil_liter": 9.00, "milk_liter": 1.00, "cheese_kg": 11.00,
+    "beef_kg": 13.00, "pork_kg": 7.00, "pasta_kg": 1.80,
+    "bread_loaf": 2.50, "cream_liter": 3.20, "sugar_kg": 1.00,
+    "salt_kg": 0.60, "pepper_kg": 24.00
+  },
+  "PL": {
+    "currency": "PLN", "symbol": "zł",
+    "chicken_breast_kg": 18.00, "eggs_dozen": 8.00, "rice_kg": 5.00,
+    "onion_kg": 3.00, "garlic_kg": 15.00, "tomato_kg": 7.00,
+    "potato_kg": 3.00, "flour_kg": 2.50, "butter_kg": 18.00,
+    "olive_oil_liter": 25.00, "milk_liter": 3.00, "cheese_kg": 28.00,
+    "beef_kg": 35.00, "pork_kg": 18.00, "pasta_kg": 5.00,
+    "bread_loaf": 5.00, "cream_liter": 8.00, "sugar_kg": 3.50,
+    "salt_kg": 1.50, "pepper_kg": 60.00
+  },
+  "JP": {
+    "currency": "JPY", "symbol": "¥",
+    "chicken_breast_kg": 950, "eggs_dozen": 320, "rice_kg": 400,
+    "onion_kg": 200, "garlic_kg": 600, "tomato_kg": 500,
+    "potato_kg": 250, "flour_kg": 200, "butter_kg": 1200,
+    "olive_oil_liter": 1400, "milk_liter": 220, "cheese_kg": 1800,
+    "beef_kg": 3500, "pork_kg": 1200, "pasta_kg": 350,
+    "bread_loaf": 250, "cream_liter": 500, "sugar_kg": 200,
+    "salt_kg": 100, "pepper_kg": 3000
+  },
+  "KR": {
+    "currency": "KRW", "symbol": "₩",
+    "chicken_breast_kg": 9000, "eggs_dozen": 3500, "rice_kg": 3000,
+    "onion_kg": 2000, "garlic_kg": 5000, "tomato_kg": 4000,
+    "potato_kg": 2500, "flour_kg": 1800, "butter_kg": 10000,
+    "olive_oil_liter": 12000, "milk_liter": 2200, "cheese_kg": 15000,
+    "beef_kg": 35000, "pork_kg": 12000, "pasta_kg": 3500,
+    "bread_loaf": 3000, "cream_liter": 5000, "sugar_kg": 2000,
+    "salt_kg": 800, "pepper_kg": 25000
+  },
+  "CN": {
+    "currency": "CNY", "symbol": "¥",
+    "chicken_breast_kg": 25.00, "eggs_dozen": 12.00, "rice_kg": 6.00,
+    "onion_kg": 4.00, "garlic_kg": 12.00, "tomato_kg": 8.00,
+    "potato_kg": 5.00, "flour_kg": 4.00, "butter_kg": 45.00,
+    "olive_oil_liter": 55.00, "milk_liter": 8.00, "cheese_kg": 80.00,
+    "beef_kg": 75.00, "pork_kg": 35.00, "pasta_kg": 12.00,
+    "bread_loaf": 12.00, "cream_liter": 20.00, "sugar_kg": 5.00,
+    "salt_kg": 2.00, "pepper_kg": 80.00
+  },
+  "IN": {
+    "currency": "INR", "symbol": "₹",
+    "chicken_breast_kg": 220, "eggs_dozen": 75, "rice_kg": 50,
+    "onion_kg": 30, "garlic_kg": 120, "tomato_kg": 40,
+    "potato_kg": 25, "flour_kg": 35, "butter_kg": 450,
+    "olive_oil_liter": 700, "milk_liter": 55, "cheese_kg": 600,
+    "beef_kg": 350, "pork_kg": 280, "pasta_kg": 90,
+    "bread_loaf": 45, "cream_liter": 150, "sugar_kg": 40,
+    "salt_kg": 15, "pepper_kg": 800
+  },
+  "AU": {
+    "currency": "AUD", "symbol": "A$",
+    "chicken_breast_kg": 12.00, "eggs_dozen": 5.50, "rice_kg": 2.50,
+    "onion_kg": 2.00, "garlic_kg": 9.00, "tomato_kg": 4.50,
+    "potato_kg": 2.50, "flour_kg": 1.80, "butter_kg": 10.00,
+    "olive_oil_liter": 12.00, "milk_liter": 1.50, "cheese_kg": 14.00,
+    "beef_kg": 18.00, "pork_kg": 10.00, "pasta_kg": 3.00,
+    "bread_loaf": 4.00, "cream_liter": 4.50, "sugar_kg": 1.50,
+    "salt_kg": 1.00, "pepper_kg": 30.00
+  },
+  "SG": {
+    "currency": "SGD", "symbol": "S$",
+    "chicken_breast_kg": 10.00, "eggs_dozen": 3.50, "rice_kg": 2.50,
+    "onion_kg": 2.00, "garlic_kg": 6.00, "tomato_kg": 3.50,
+    "potato_kg": 2.50, "flour_kg": 2.00, "butter_kg": 9.00,
+    "olive_oil_liter": 12.00, "milk_liter": 2.50, "cheese_kg": 16.00,
+    "beef_kg": 22.00, "pork_kg": 10.00, "pasta_kg": 3.50,
+    "bread_loaf": 3.50, "cream_liter": 5.00, "sugar_kg": 1.50,
+    "salt_kg": 0.80, "pepper_kg": 28.00
+  },
+  "PH": {
+    "currency": "PHP", "symbol": "₱",
+    "chicken_breast_kg": 220, "eggs_dozen": 90, "rice_kg": 55,
+    "onion_kg": 60, "garlic_kg": 180, "tomato_kg": 70,
+    "potato_kg": 65, "flour_kg": 55, "butter_kg": 480,
+    "olive_oil_liter": 320, "milk_liter": 80, "cheese_kg": 420,
+    "beef_kg": 380, "pork_kg": 260, "pasta_kg": 95,
+    "bread_loaf": 65, "cream_liter": 160, "sugar_kg": 65,
+    "salt_kg": 20, "pepper_kg": 900
+  },
+  "ID": {
+    "currency": "IDR", "symbol": "Rp",
+    "chicken_breast_kg": 38000, "eggs_dozen": 24000, "rice_kg": 12000,
+    "onion_kg": 18000, "garlic_kg": 35000, "tomato_kg": 15000,
+    "potato_kg": 14000, "flour_kg": 12000, "butter_kg": 75000,
+    "olive_oil_liter": 90000, "milk_liter": 18000, "cheese_kg": 95000,
+    "beef_kg": 130000, "pork_kg": 80000, "pasta_kg": 22000,
+    "bread_loaf": 18000, "cream_liter": 35000, "sugar_kg": 14000,
+    "salt_kg": 5000, "pepper_kg": 180000
+  },
+  "MY": {
+    "currency": "MYR", "symbol": "RM",
+    "chicken_breast_kg": 14.00, "eggs_dozen": 5.50, "rice_kg": 3.50,
+    "onion_kg": 3.00, "garlic_kg": 10.00, "tomato_kg": 5.00,
+    "potato_kg": 4.00, "flour_kg": 3.00, "butter_kg": 25.00,
+    "olive_oil_liter": 32.00, "milk_liter": 5.50, "cheese_kg": 35.00,
+    "beef_kg": 42.00, "pork_kg": 22.00, "pasta_kg": 8.00,
+    "bread_loaf": 5.00, "cream_liter": 12.00, "sugar_kg": 3.50,
+    "salt_kg": 1.50, "pepper_kg": 55.00
+  },
+  "TH": {
+    "currency": "THB", "symbol": "฿",
+    "chicken_breast_kg": 90, "eggs_dozen": 45, "rice_kg": 30,
+    "onion_kg": 35, "garlic_kg": 80, "tomato_kg": 40,
+    "potato_kg": 35, "flour_kg": 28, "butter_kg": 220,
+    "olive_oil_liter": 280, "milk_liter": 50, "cheese_kg": 380,
+    "beef_kg": 300, "pork_kg": 140, "pasta_kg": 70,
+    "bread_loaf": 55, "cream_liter": 120, "sugar_kg": 28,
+    "salt_kg": 12, "pepper_kg": 500
+  },
+  "VN": {
+    "currency": "VND", "symbol": "₫",
+    "chicken_breast_kg": 85000, "eggs_dozen": 35000, "rice_kg": 18000,
+    "onion_kg": 20000, "garlic_kg": 45000, "tomato_kg": 22000,
+    "potato_kg": 18000, "flour_kg": 16000, "butter_kg": 180000,
+    "olive_oil_liter": 220000, "milk_liter": 28000, "cheese_kg": 280000,
+    "beef_kg": 250000, "pork_kg": 130000, "pasta_kg": 45000,
+    "bread_loaf": 20000, "cream_liter": 80000, "sugar_kg": 18000,
+    "salt_kg": 8000, "pepper_kg": 400000
+  },
+  "BR": {
+    "currency": "BRL", "symbol": "R$",
+    "chicken_breast_kg": 18.00, "eggs_dozen": 8.00, "rice_kg": 5.00,
+    "onion_kg": 4.00, "garlic_kg": 18.00, "tomato_kg": 7.00,
+    "potato_kg": 5.00, "flour_kg": 4.00, "butter_kg": 35.00,
+    "olive_oil_liter": 45.00, "milk_liter": 5.00, "cheese_kg": 40.00,
+    "beef_kg": 45.00, "pork_kg": 22.00, "pasta_kg": 7.00,
+    "bread_loaf": 8.00, "cream_liter": 12.00, "sugar_kg": 4.00,
+    "salt_kg": 2.00, "pepper_kg": 80.00
+  },
+  "AR": {
+    "currency": "ARS", "symbol": "AR$",
+    "chicken_breast_kg": 2800, "eggs_dozen": 1200, "rice_kg": 600,
+    "onion_kg": 400, "garlic_kg": 1500, "tomato_kg": 700,
+    "potato_kg": 450, "flour_kg": 350, "butter_kg": 3500,
+    "olive_oil_liter": 5000, "milk_liter": 550, "cheese_kg": 4500,
+    "beef_kg": 4000, "pork_kg": 2200, "pasta_kg": 700,
+    "bread_loaf": 800, "cream_liter": 1200, "sugar_kg": 400,
+    "salt_kg": 150, "pepper_kg": 8000
+  },
+  "CO": {
+    "currency": "COP", "symbol": "COL$",
+    "chicken_breast_kg": 14000, "eggs_dozen": 5500, "rice_kg": 3000,
+    "onion_kg": 2500, "garlic_kg": 8000, "tomato_kg": 3500,
+    "potato_kg": 2500, "flour_kg": 2200, "butter_kg": 18000,
+    "olive_oil_liter": 25000, "milk_liter": 3000, "cheese_kg": 22000,
+    "beef_kg": 28000, "pork_kg": 14000, "pasta_kg": 4500,
+    "bread_loaf": 4000, "cream_liter": 7000, "sugar_kg": 2500,
+    "salt_kg": 1000, "pepper_kg": 45000
+  },
+  "CL": {
+    "currency": "CLP", "symbol": "CL$",
+    "chicken_breast_kg": 5500, "eggs_dozen": 2500, "rice_kg": 1200,
+    "onion_kg": 800, "garlic_kg": 3000, "tomato_kg": 1500,
+    "potato_kg": 900, "flour_kg": 800, "butter_kg": 7000,
+    "olive_oil_liter": 9000, "milk_liter": 1100, "cheese_kg": 9000,
+    "beef_kg": 12000, "pork_kg": 6000, "pasta_kg": 1500,
+    "bread_loaf": 1200, "cream_liter": 2500, "sugar_kg": 900,
+    "salt_kg": 400, "pepper_kg": 18000
+  },
+  "SA": {
+    "currency": "SAR", "symbol": "SR",
+    "chicken_breast_kg": 22.00, "eggs_dozen": 8.00, "rice_kg": 5.00,
+    "onion_kg": 3.00, "garlic_kg": 12.00, "tomato_kg": 5.00,
+    "potato_kg": 3.50, "flour_kg": 3.00, "butter_kg": 22.00,
+    "olive_oil_liter": 28.00, "milk_liter": 4.50, "cheese_kg": 30.00,
+    "beef_kg": 38.00, "pork_kg": 0, "pasta_kg": 6.00,
+    "bread_loaf": 3.50, "cream_liter": 9.00, "sugar_kg": 3.50,
+    "salt_kg": 1.50, "pepper_kg": 45.00
+  },
+  "AE": {
+    "currency": "AED", "symbol": "AED",
+    "chicken_breast_kg": 28.00, "eggs_dozen": 10.00, "rice_kg": 6.00,
+    "onion_kg": 4.00, "garlic_kg": 14.00, "tomato_kg": 6.00,
+    "potato_kg": 4.50, "flour_kg": 4.00, "butter_kg": 28.00,
+    "olive_oil_liter": 35.00, "milk_liter": 5.50, "cheese_kg": 38.00,
+    "beef_kg": 48.00, "pork_kg": 0, "pasta_kg": 8.00,
+    "bread_loaf": 5.00, "cream_liter": 12.00, "sugar_kg": 4.00,
+    "salt_kg": 2.00, "pepper_kg": 55.00
+  },
+  "TR": {
+    "currency": "TRY", "symbol": "₺",
+    "chicken_breast_kg": 120, "eggs_dozen": 45, "rice_kg": 30,
+    "onion_kg": 15, "garlic_kg": 60, "tomato_kg": 25,
+    "potato_kg": 18, "flour_kg": 15, "butter_kg": 180,
+    "olive_oil_liter": 200, "milk_liter": 25, "cheese_kg": 220,
+    "beef_kg": 350, "pork_kg": 0, "pasta_kg": 35,
+    "bread_loaf": 20, "cream_liter": 70, "sugar_kg": 25,
+    "salt_kg": 8, "pepper_kg": 400
+  },
+  "EG": {
+    "currency": "EGP", "symbol": "E£",
+    "chicken_breast_kg": 120, "eggs_dozen": 55, "rice_kg": 25,
+    "onion_kg": 15, "garlic_kg": 50, "tomato_kg": 20,
+    "potato_kg": 18, "flour_kg": 15, "butter_kg": 160,
+    "olive_oil_liter": 180, "milk_liter": 30, "cheese_kg": 200,
+    "beef_kg": 280, "pork_kg": 0, "pasta_kg": 30,
+    "bread_loaf": 15, "cream_liter": 65, "sugar_kg": 25,
+    "salt_kg": 8, "pepper_kg": 350
+  },
+  "NZ": {
+    "currency": "NZD", "symbol": "NZ$",
+    "chicken_breast_kg": 14.00, "eggs_dozen": 6.00, "rice_kg": 2.80,
+    "onion_kg": 2.20, "garlic_kg": 10.00, "tomato_kg": 5.00,
+    "potato_kg": 2.80, "flour_kg": 2.00, "butter_kg": 12.00,
+    "olive_oil_liter": 14.00, "milk_liter": 1.80, "cheese_kg": 16.00,
+    "beef_kg": 20.00, "pork_kg": 11.00, "pasta_kg": 3.50,
+    "bread_loaf": 4.50, "cream_liter": 5.00, "sugar_kg": 1.80,
+    "salt_kg": 1.20, "pepper_kg": 35.00
+  },
+  "ZA": {
+    "currency": "ZAR", "symbol": "R",
+    "chicken_breast_kg": 70, "eggs_dozen": 28, "rice_kg": 18,
+    "onion_kg": 12, "garlic_kg": 45, "tomato_kg": 20,
+    "potato_kg": 14, "flour_kg": 12, "butter_kg": 120,
+    "olive_oil_liter": 150, "milk_liter": 20, "cheese_kg": 160,
+    "beef_kg": 160, "pork_kg": 90, "pasta_kg": 22,
+    "bread_loaf": 18, "cream_liter": 50, "sugar_kg": 18,
+    "salt_kg": 8, "pepper_kg": 300
+  },
+  "DEFAULT": {
+    "currency": "USD", "symbol": "$",
+    "chicken_breast_kg": 8.00, "eggs_dozen": 3.50, "rice_kg": 2.00,
+    "onion_kg": 1.80, "garlic_kg": 7.00, "tomato_kg": 3.00,
+    "potato_kg": 2.00, "flour_kg": 1.50, "butter_kg": 8.00,
+    "olive_oil_liter": 9.00, "milk_liter": 1.20, "cheese_kg": 11.00,
+    "beef_kg": 13.00, "pork_kg": 7.00, "pasta_kg": 2.50,
+    "bread_loaf": 3.00, "cream_liter": 4.00, "sugar_kg": 1.20,
+    "salt_kg": 0.80, "pepper_kg": 25.00
+  }
+}
