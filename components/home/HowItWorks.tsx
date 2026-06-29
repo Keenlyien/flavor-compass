@@ -15,13 +15,13 @@ const STEPS = [
     number: "02",
     icon: <BookOpen size={20} strokeWidth={1.5} />,
     title: "Review the Details",
-    description: "Check ingredients, nutrition per serving, and the full method before you start. Everything on one clean page.",
+    description: "Review the full ingredient list, cook time, servings, and health score before you start. Everything on one clean page.",
   },
   {
     number: "03",
     icon: <ChefHat size={20} strokeWidth={1.5} />,
     title: "Cook Step by Step",
-    description: "Follow the immersive walkthrough — one step at a time, with built-in timers so nothing gets missed or burned.",
+    description: "Follow the immersive walkthrough — one step at a time, with animated cooking guides and built-in timers so nothing gets missed or burned.",
   },
 ]
 

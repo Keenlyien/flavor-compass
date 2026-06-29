@@ -48,7 +48,7 @@ export default function Navbar() {
             <span style={{
               fontFamily: "'DM Sans', system-ui, sans-serif",
               fontSize: "14px",
-              fontWeight: 500,
+              fontWeight: 400,
               color: "var(--text-primary)",
               letterSpacing: "0.02em",
             }}>
