@@ -20,6 +20,7 @@ const CUISINES: FilterOption[] = [
   { label: "Chinese",  value: "chinese",  emoji: "🥟" },
   { label: "American", value: "american", emoji: "🍔" },
   { label: "Greek",    value: "greek",    emoji: "🫒" },
+  { label: "Korean",   value: "korean",   emoji: "🥢" },
   { label: "Spanish",  value: "spanish",  emoji: "🥘" },
 ]
 

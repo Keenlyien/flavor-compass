@@ -3,16 +3,18 @@
 import { useEffect, useState, useCallback, useRef } from "react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { motion, useMotionValue, useSpring, useTransform, MotionValue } from "framer-motion"
 
 const CUISINE_CATEGORIES = [
   { label: "Italian",  emoji: "🍝" },
   { label: "Japanese", emoji: "🍜" },
   { label: "Mexican",  emoji: "🌮" },
-  { label: "French",   emoji: "🥐" },
   { label: "Thai",     emoji: "🍛" },
-  { label: "Indian",   emoji: "🫓" },
+  { label: "Indian",   emoji: "🍛" },
+  { label: "Chinese",  emoji: "🥟" },
+  { label: "American", emoji: "🍔" },
   { label: "Korean",   emoji: "🥢" },
-  { label: "Greek",    emoji: "🫒" },
+  { label: "Spanish",  emoji: "🥘" },
 ]
 
 const HERO_STATS = [
@@ -65,7 +67,75 @@ const HERO_PHOTO_IDS = [1640777, 2097090, 769289, 1279330, 3184183]
 const INTERVAL_MS = 5000
 const TRANSITION_MS = 700
 
+
+/* ── Magnified dock item — buildui.com/recipes/magnified-dock ── */
+const DOCK_SCALE    = 1.7   // max magnification
+const DOCK_DISTANCE = 120   // px of mouse influence radius
+const SPRING_CFG    = { mass: 0.1, stiffness: 170, damping: 12 }
+
+function DockCuisineItem({
+  cat,
+  mouseX,
+}: {
+  cat: { label: string; emoji: string }
+  mouseX: MotionValue<number>
+}) {
+  const ref = useRef<HTMLDivElement>(null)
+
+  // Distance from cursor to center of this item
+  const distance = useTransform(mouseX, (val: number) => {
+    if (!ref.current) return Infinity
+    const rect = ref.current.getBoundingClientRect()
+    return val - (rect.left + rect.width / 2)
+  })
+
+  // Scale based on distance — peaks at center, falls off toward edges
+  const scaleVal = useTransform(
+    distance,
+    [-DOCK_DISTANCE, 0, DOCK_DISTANCE],
+    [1, DOCK_SCALE, 1],
+  )
+
+  const scale = useSpring(scaleVal, SPRING_CFG)
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{
+        scale,
+        originY: 1,
+        display: "inline-flex",
+        flexShrink: 0,
+      }}
+    >
+      <a
+        href={`/recipes?cuisine=${cat.label.toLowerCase()}`}
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "8px",
+          backgroundColor: "var(--bg-card)",
+          border: "1px solid var(--border-card)",
+          padding: "5px 14px 5px 5px",
+          borderRadius: "100px",
+          boxShadow: "0 1px 4px var(--shadow-card)",
+          fontFamily: "'DM Sans', sans-serif",
+          fontSize: "12px",
+          color: "var(--text-secondary)",
+          textDecoration: "none",
+          cursor: "pointer",
+          whiteSpace: "nowrap",
+        }}
+      >
+        <CuisineImg cuisine={cat.label} fallback={cat.emoji} />
+        {cat.label}
+      </a>
+    </motion.div>
+  )
+}
+
 export default function Hero() {
+  const cuisineMouseX = useMotionValue(-Infinity)
   const [mounted, setMounted]   = useState(false)
   const [photos, setPhotos]     = useState<string[]>([])
   const [current, setCurrent]   = useState(0)
@@ -426,6 +496,7 @@ export default function Hero() {
         borderBottom: "1px solid var(--border)",
         backgroundColor: "var(--bg-accent-strip)",
         padding: "20px 0",
+        overflow: "visible",
       }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "14px" }}>
@@ -457,33 +528,20 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+          {/* Magnified dock — mouse position tracked on the row wrapper */}
+          <motion.div
+            style={{
+              display: "flex", flexWrap: "nowrap", gap: "8px",
+              overflowX: "auto", overflowY: "visible",
+              paddingTop: "24px", paddingBottom: "8px",
+            }}
+            onMouseMove={e => cuisineMouseX.set(e.clientX)}
+            onMouseLeave={() => cuisineMouseX.set(-Infinity)}
+          >
             {CUISINE_CATEGORIES.map(cat => (
-              <Link
-                key={cat.label}
-                href={`/recipes?cuisine=${cat.label.toLowerCase()}`}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  backgroundColor: "var(--bg-card)",
-                  border: "1px solid var(--border-card)",
-                  padding: "5px 14px 5px 5px",
-                  borderRadius: "100px",
-                  boxShadow: "0 1px 4px var(--shadow-card)",
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: "12px",
-                  color: "var(--text-secondary)",
-                  textDecoration: "none",
-                  transition: "all 0.15s ease",
-                }}
-                className="hover:opacity-75"
-              >
-                <CuisineImg cuisine={cat.label} fallback={cat.emoji} />
-                {cat.label}
-              </Link>
+              <DockCuisineItem key={cat.label} cat={cat} mouseX={cuisineMouseX} />
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
