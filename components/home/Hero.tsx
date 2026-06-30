@@ -70,7 +70,7 @@ const TRANSITION_MS = 700
 
 /* ── Magnified dock item — buildui.com/recipes/magnified-dock ── */
 const DOCK_SCALE    = 1.7   // max magnification
-const DOCK_DISTANCE = 120   // px of mouse influence radius
+const DOCK_DISTANCE = 90   // px of mouse influence radius
 const SPRING_CFG    = { mass: 0.1, stiffness: 170, damping: 12 }
 
 function DockCuisineItem({
