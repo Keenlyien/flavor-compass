@@ -60,7 +60,7 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center gap-8">
             {[
               { label: "Recipes",    href: "/recipes" },
-              { label: "Cuisines",   href: "/recipes?cuisine=" },
+              { label: "Cuisines",   href: "/cuisines" },
               { label: "How It Works", href: "/#how-it-works" },
             ].map(item => (
               <Link
@@ -126,7 +126,7 @@ export default function Navbar() {
         >
           {[
             { label: "Recipes",      href: "/recipes" },
-            { label: "Cuisines",     href: "/recipes?cuisine=" },
+            { label: "Cuisines",     href: "/cuisines" },
             { label: "How It Works", href: "/#how-it-works" },
           ].map(item => (
             <Link

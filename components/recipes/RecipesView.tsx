@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useCallback, useRef } from "react"
-import { useSearchParams, useRouter } from "next/navigation"
+import { useSearchParams, useRouter, usePathname } from "next/navigation"
 import Navbar from "@/components/layout/Navbar"
 import RecipeCard from "@/components/recipes/RecipeCard"
 import RecipeSearch from "@/components/recipes/RecipeSearch"
@@ -21,6 +21,7 @@ function sortLabel(sort: string) {
 export default function RecipesView() {
   const searchParams = useSearchParams()
   const router       = useRouter()
+  const pathname     = usePathname()
 
   const [query,   setQuery]   = useState(searchParams.get("q")       ?? "")
   const [cuisine, setCuisine] = useState(searchParams.get("cuisine") ?? "")
@@ -138,7 +139,7 @@ export default function RecipesView() {
       <div style={{ minHeight: "100vh", backgroundColor: "var(--bg-primary)" }}>
 
         {/* Background carousel — always on, cuisine-specific or generic food */}
-        <CuisineParallaxBackground cuisine={cuisine} />
+        <CuisineParallaxBackground key={pathname} cuisine={cuisine} />
 
         <Navbar />
 

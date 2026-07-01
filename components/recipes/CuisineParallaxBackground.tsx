@@ -19,7 +19,14 @@ export default function CuisineParallaxBackground({ cuisine }: Props) {
   const photosRef      = useRef<string[]>([])
   const currentRef     = useRef(0)
   const intervalRef    = useRef<ReturnType<typeof setInterval> | null>(null)
-  const lastZoneRef    = useRef(-1)
+  // Initialize to the CURRENT scroll zone (not always -1) so that if
+  // the browser preserves scroll position across a client-side route
+  // change, the very first scroll event after mount doesn't
+  // immediately fire a spurious "advance" just because scrollY is
+  // already past zone 0.
+  const lastZoneRef    = useRef(
+    typeof window !== "undefined" ? Math.floor(window.scrollY / SCROLL_STEP) : -1
+  )
   const tickingRef     = useRef(false)
   const isInitialMount = useRef(true)  // skip reset on first render
 
@@ -47,44 +54,16 @@ export default function CuisineParallaxBackground({ cuisine }: Props) {
     }
   }, [cuisine])
 
-  // Fetch Pexels photos — fires for any cuisine including empty ("All")
+  // Fetch photos via the cached /api/cuisine-images-multi route
+  // (MongoDB-backed) instead of calling Pexels directly from the
+  // browser — direct calls on every page load/reload were hitting
+  // Pexels' rate limit, causing the background to intermittently
+  // fail to appear at all. Fires for any cuisine including empty ("All").
   useEffect(() => {
-    const key = process.env.NEXT_PUBLIC_PEXELS_API_KEY
-    if (!key) return
-
-    const QUERIES: Record<string, string> = {
-      italian:        "italian pasta carbonara food photography",
-      japanese:       "japanese ramen sushi bowl food photography",
-      mexican:        "mexican tacos enchiladas food photography",
-      french:         "french cuisine baguette croissant food",
-      thai:           "thai green curry pad thai food",
-      indian:         "indian curry butter chicken spices",
-      chinese:        "chinese noodles dim sum fried rice",
-      american:       "american burger bbq ribs food photography",
-      greek:          "greek souvlaki mezze food photography",
-      spanish:        "spanish paella seafood food photography",
-      korean:         "korean bibimbap bulgogi food photography",
-      mediterranean:  "mediterranean hummus pita mezze food",
-      "middle eastern": "middle eastern shawarma falafel food",
-      filipino:       "filipino adobo lechon food photography",
-      "":             "gourmet food photography colorful dishes",
-    }
-
-    // Empty string = "All" — use a general food photography query
-    const key2 = cuisine.toLowerCase()
-    const query = QUERIES[key2] ?? (cuisine ? `${cuisine} food photography` : "gourmet food photography colorful dishes")
-
-    fetch(
-      `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${IMAGE_COUNT}&orientation=landscape&size=large`,
-      { headers: { Authorization: key } }
-    )
+    fetch(`/api/cuisine-images-multi?cuisine=${encodeURIComponent(cuisine.toLowerCase())}&count=${IMAGE_COUNT}&orientation=landscape`)
       .then(r => r.json())
       .then(d => {
-        const urls: string[] = (d.photos ?? [])
-          .map((p: { src: { original: string; large2x: string } }) =>
-            p.src?.original || p.src?.large2x || ""
-          )
-          .filter(Boolean)
+        const urls: string[] = d.urls ?? []
         setPhotos(urls)
         setLoaded(new Array(urls.length).fill(false))
       })
