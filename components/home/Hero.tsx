@@ -187,22 +187,14 @@ export default function Hero() {
     <div style={{ backgroundColor: "var(--bg-primary)" }}>
 
       {/* ── HERO ── */}
-      <section style={{
-        minHeight: "100vh",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        paddingTop: "64px",
-      }}>
+      <section
+        className="grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen"
+        style={{ paddingTop: "64px" }}
+      >
 
         {/* LEFT */}
         <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            padding: "60px 64px 60px 80px",
-          }}
-          className="px-6 lg:pl-20 lg:pr-16"
+          className="flex flex-col justify-center px-6 py-14 lg:pl-20 lg:pr-16 lg:py-[60px]"
         >
           <div
             className={mounted ? "anim-fade-up" : "opacity-0"}
