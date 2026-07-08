@@ -98,10 +98,6 @@ digital_chef/
 │   │   └── recipe.ts                       # RecipeCardData, RecipeDetailData, etc.
 │   ├── image.ts                            # Cloudinary URL optimizer
 │   ├── time.ts                             # formatTime() minutes → "1h 30m"
-│   ├── utils.ts
-│   ├── location.ts                         # ⚠ dead code (see below)
-│   ├── route.ts                            # ⚠ dead code (see below)
-│   └── prices.json                         # ⚠ dead code (see below)
 │
 ├── public/
 │   ├── flavor_compass.png                  # logo
